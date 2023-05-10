@@ -1,0 +1,58 @@
+.arakeszkozok{
+    background: url(fantasyforest.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+.bevezeto{
+    text-align: center;
+    color: white;
+    font-size:x-large;
+    padding: 5% 5% 0 5%;
+}
+
+.valasz{
+    margin-top: 1%;
+}
+
+.oszlopIMG{
+    box-shadow: 0 0 20px black;
+    max-width: 250px;
+    border-radius: 12%;
+    padding: 1%;
+}
+
+.oszlopos1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: larger;
+    padding: 5%;
+}
+
+.introSection{
+    box-shadow: 0 0 15px black;
+}
+
+.oszlop01, .oszlop05{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 5% 0 5%;
+}
+
+.oszlop01 i, .oszlop05 i{
+    margin: 30px;
+    font-size: 40px;
+    
+}
+
+.oszlop02{
+    padding-right: 3%;
+}
+
+.oszlop04{
+  padding-left: 3%;
+}
+
+

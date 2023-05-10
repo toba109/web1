@@ -1,0 +1,38 @@
+#kapcsolat {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 150%;
+}
+#telefon {
+    color: white;
+    text-shadow: 1px 1px 2px #000000;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-top: 20px;
+}
+.kozmedia007 {
+    text-align:center;
+    bottom: 20%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kozmedia007 li.qwe{
+    list-style: none;
+}
+
+.kozmedia007 li.qwe a.qwer{
+    display: inline-block;
+    margin-right: 170px;
+    transform: scale(3);
+    transition: 0.5s;
+}
+
+.kozmedia007 li.qwe a.qwer:hover{
+    transform: scale(3.5) translateY(-10px);
+}
+

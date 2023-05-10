@@ -1,0 +1,437 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: azure;
+}
+nav.navigacio{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav.navigacio ul.unorderedList{
+    float: right;
+    margin-right: 20px;
+}
+nav.navigacio ul.unorderedList li.lista{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav.navigacio ul.unorderedList li.lista a{
+    color: white;
+    font-size: 17 px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+.checkfa{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor:pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav.navigacio ul.unorderedList li.lista a{
+        font-size: 16px;
+    }
+}
+@media(max-width: 858px){
+    .checkfa{
+        display:block;
+    }
+    ul.unorderedList{
+        z-index: 1000;
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav.navigacio ul.unorderedList li.lista{
+       display: block;
+       margin: 50px 0;
+       line-height: 30px;
+    }
+    nav.navigacio ul.unorderedList li.lista a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul.unorderedList{
+        left: 0;
+    }
+}
+section.asd{
+    background: url(fantasyforest.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+    box-shadow: 0 0 10px black;
+}
+section div.wrapper{
+    text-align: center;
+    padding: 15% 10%;
+}
+section div.wrapper h2{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 2px 0 rgba(0,0,0,0.5);
+    font-size: 60px;
+}
+section div.wrapper p{
+    color: #fff;
+    font-size: 28px;
+    margin: 0;
+    line-height: 35px;
+}
+section div.wrapper a{
+    background: crimson;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 30px;
+}
+span:before{
+    content: '';
+    animation: animate infinite 10s;
+}
+@keyframes animate{
+    0%{
+        content: 'Animators';
+    }
+    20%{
+        content: 'Designers';
+    }
+    40%{
+        content: 'Photographers';
+    }
+    60%{
+        content: 'Videographers';
+    }
+    80%{
+        content: 'Developers';
+    }
+    100%{
+        content: 'Animators';
+    }
+}
+section div.wrapper a.readmore:hover{
+    box-shadow: inset 200px 0 0 0 #0082e6;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+
+body section.myslideshow{
+    color:#fff;
+}
+#slider{
+    box-shadow: 0 0 40px black;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(tower.jpg) no-repeat;
+}
+
+.container{
+    width: 1600px;
+    margin: auto;
+}
+
+.subcontainer{
+    width: 85%;
+    margin: auto;
+}
+
+.controller{
+    display: flex;
+    justify-content: space-between;
+}
+
+#controls i{
+    color: white;
+    font-size: 1rem;
+}
+
+.previous, .next{
+    padding: 2px;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    transition: 0.7s ease-in-out;
+    border: 3px solid white;
+    background-color: black;
+    box-shadow: 0 0 5px #bbb;
+}
+
+.previous:hover, .next:hover{
+    border: 3px solid gray;
+}
+
+.slide-img{
+    width: 100%;
+    height: 275px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.slide-img:hover{
+    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.899) inset;
+}
+
+.slide-img a{
+    text-decoration: none;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 1.5rem;
+    color:white;
+    opacity: 0;
+}
+
+.slide-img:hover a{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.img-1{
+    background-image: url(Draven_0.jpg);
+}
+.img-2{
+    background-image: url(Akali_50.jpg);
+}
+.img-3{
+    background-image: url(Ahri_27.jpg);
+}
+.img-4{
+    background-image: url(Katarina_29.jpg);
+}
+.img-5{
+    background-image: url(Viego_Splash.jpg);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.to-top{
+    background: white;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #1f1f1f;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+@media(max-width: 1600px){
+    .container{
+        width: 100%;
+    }
+}
+
+#korites{
+    background-image: radial-gradient(#FA736D,#03112B);
+    box-shadow: 0 0 20px black;
+}
+
+#amikepeink{
+    box-shadow: 0 0 20px black;
+    background: url(tower.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    background-position-y:bottom;
+}
+
+.kisebb{
+    padding: 5% 10% 1% 10%;
+}
+
+.kozepso{
+    font-size: 30px;
+    padding: 0 10% 5% 10%;
+}
+
+.nagyobb{
+    text-align: center;
+    padding: 0 10% 0 10%;
+    font-size: 40px;
+}
+
+.oszlopos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5% 5% 0 5%;
+    font-size: xx-large;
+}
+.oszlopos i{
+    padding: 10%;
+    font-size: 40px;
+    border-radius: 30%;
+    outline: none;
+    border: 5px solid white;
+    background-color: black;
+    box-shadow: 0 0 10px black;
+}
+.oszlop1{
+    box-shadow: 0 0 10px black;
+    padding: 10% 3% 5% 3%;
+}
+.oszlop1 h2{
+    padding: 3% 0 3% 0;
+    text-shadow: 0 0 10px black;
+}
+.oszlop1 p{
+    text-shadow: 0 0 5px black;
+}
+
+.oszlop2{
+    padding: 3%;
+    box-shadow: 0 0 10px black;
+}
+.oszlop2 h2{
+    padding: 3% 0 3% 0;
+    text-shadow: 0 0 10px black;
+}
+.oszlop3 p{
+    text-shadow: 0 0 5px black;
+}
+
+.oszlop3{
+    box-shadow: 0 0 10px black;
+    padding: 10% 3% 5% 3%;
+}
+.oszlop3 h2{
+    padding: 3% 0 3% 0;
+    text-shadow: 0 0 10px black;
+}
+.oszlop3 p{
+    text-shadow: 0 0 5px black;
+}
+
+.kepekIMGs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: calc(100vh - 80px);
+}
+
+.kep{
+    position: relative;
+    width: 600px;
+}
+
+.kep__IMG{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.kep__Overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.kep__Overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.kep__Overlay:hover{
+    opacity: 1;
+}
+
+.kep__Overlay:hover > * {
+    transform: translateY(0);
+}
+
+.kep__Title{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.kep__Desc{
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+.profilelerhetosegek{
+    box-shadow: 0 0 10px black;
+    margin-top: 75px;
+    color: white;
+    font-size: x-large;
+}
